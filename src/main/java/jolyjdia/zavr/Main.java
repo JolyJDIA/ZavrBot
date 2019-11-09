@@ -13,6 +13,7 @@ import java.util.Properties;
 public class Main {
     private static final Properties properties = new Properties();
     private static String accessToken;
+
     static {
         try (InputStream inputStream = Main.class.getClassLoader().getResourceAsStream("config.properties")) {
             if (inputStream != null) {
